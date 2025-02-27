@@ -1,0 +1,88 @@
+:root {
+  --h2-font-size: 20px;
+  --small-font-size: 13px;
+}
+
+@media screen and (min-width: 1120px) {
+  :root {
+    --h2-font-size: 24px;
+    --small-font-size: 14px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  color: white;
+  text-align: center;
+}
+
+/* Form */
+.contact-container {
+  max-width: 500px;
+  margin: auto;
+  padding: 30px;
+  background: #3388CC;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 20px gray;
+  text-align: center;
+  margin-top: 80px;
+}
+
+/* Form Input Fields */
+.contact-container input,
+.contact-container textarea {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  color: white;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.contact-container input::placeholder,
+.contact-container textarea::placeholder {
+  color: white;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+  border: 1px solid #00d9ff;
+  box-shadow: 0 0 10px #00d9ff;
+  outline: none;
+}
+
+/* Send Message Button */
+.btn-custom {
+  background: linear-gradient(135deg, #00d9ff, #0088cc);
+  color: white;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 25px;
+  width: 100%;
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-custom:hover {
+  background: linear-gradient(135deg, #0088cc, #005f99);
+  transform: scale(1.05);
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+  .contact-container {
+    max-width: 90%;
+    padding: 20px;
+  }
+}

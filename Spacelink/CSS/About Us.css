@@ -1,0 +1,49 @@
+.container-two{
+    align-items: center;
+    justify-content: center;
+    padding: 200px;
+    gap: 30px;
+    background-color: #001f3f;
+    color: white;
+}
+
+.text{
+    font-size: 60px;
+    margin: 20px;
+}
+
+.para{
+    font-size: 20px;
+    line-height: 1.6;
+    display: flex;
+    padding-left: 20px;
+
+}
+
+
+.text1{
+    font-size: 50px;
+    margin-right: 240px;
+    font-weight: bold;
+}
+
+.left, .right {
+    width: 45%;
+}
+.paragraph {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.image-container {
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    margin: 0 auto;
+}
